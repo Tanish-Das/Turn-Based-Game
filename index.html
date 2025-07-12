@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG Battle Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>RPG Battle Game</h1>
+        <div class="status">
+            <h2>Hero Stats</h2>
+            <p>Health: <span id="hero-health">100</span></p>
+            <p>Attack: <span id="hero-attack">20</span></p>
+            <p>Defense: <span id="hero-defense">10</span></p>
+        </div>
+        <div class="status">
+            <h2>Enemy Stats</h2>
+            <p>Health: <span id="enemy-health">100</span></p>
+            <p>Attack: <span id="enemy-attack">15</span></p>
+            <p>Defense: <span id="enemy-defense">8</span></p>
+        </div>
+        
+        <div class="actions">
+            <button onclick="attack()">Attack</button>
+            <button onclick="heal()">Heal</button>
+            <button onclick="resetGame()">Reset Game</button>
+        </div>
+
+        <div id="message"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
